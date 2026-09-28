@@ -1,0 +1,20 @@
+# Build results
+bin/
+obj/
+runtimes/
+*.macroDeckPlugin
+
+# Visual Studio / Rider / VSCode
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+GEMINI.md
+

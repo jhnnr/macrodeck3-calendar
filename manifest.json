@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.macro-deck.app/plugin-manifest-v1.schema.json",
+  "manifestVersion": 1,
+  "id": "com.jhnnr.calendar",
+  "name": "Calendar",
+  "version": "1.0.0",
+  "description": "Interactive monthly calendar widget for Macro Deck 3 with month navigation and current day highlighting.",
+  "icon": "Assets/icon.svg",
+  "entrypoints": {
+    "win-x64": {
+      "executable": "runtimes/win-x64/MacroDeckCalendar.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    },
+    "osx-arm64": {
+      "executable": "runtimes/osx-arm64/MacroDeckCalendar.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    },
+    "linux-x64": {
+      "executable": "runtimes/linux-x64/MacroDeckCalendar.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    }
+  },
+  "publisher": {
+    "name": "jhnnr"
+  },
+  "repository": "https://github.com/jhnnr/macrodeck3-calendar",
+  "license": "MIT",
+  "compatibility": {
+    "macroDeck": ">=3.0.0-0"
+  }
+}
