@@ -80,19 +80,19 @@ git clone https://github.com/jhnnr/macrodeck3-calendar.git
 cd macrodeck3-calendar
 
 # Build the project
-dotnet build
+dotnet build src/macrodeck3-calendar/MacroDeckCalendar.csproj
 
 # Run against the in-process stub host (headless test)
-macrodeck-plugin run --project MacroDeckCalendar.csproj --stub-host
+macrodeck-plugin run --project src/macrodeck3-calendar/MacroDeckCalendar.csproj --stub-host
 
 # Run against a live Macro Deck 3 instance with hot reload
-macrodeck-plugin run --project MacroDeckCalendar.csproj --watch
+macrodeck-plugin run --project src/macrodeck3-calendar/MacroDeckCalendar.csproj --watch
 
 # Run official plugin conformance test suite
-macrodeck-plugin test --project MacroDeckCalendar.csproj
+macrodeck-plugin test --project src/macrodeck3-calendar/MacroDeckCalendar.csproj
 
-# Package production .macroDeckPlugin artifact
-macrodeck-plugin pack --force
+# Build multi-platform runtimes and package artifact
+macrodeck-plugin build --source src/macrodeck3-calendar --output artifacts --force
 ```
 
 ---

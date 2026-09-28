@@ -2,6 +2,7 @@
 bin/
 obj/
 runtimes/
+artifacts/
 *.macroDeckPlugin
 
 # Visual Studio / Rider / VSCode
